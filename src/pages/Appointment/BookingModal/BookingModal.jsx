@@ -38,6 +38,10 @@ const BookingModal = ({ treatment, setTreatment, selectedDate,refetch }) => {
                     alert('Booking Confirmed');
                     refetch();
                 }
+                else{
+                    setTreatment(null);
+                    alert(data.message)
+                }
 
             })
 
